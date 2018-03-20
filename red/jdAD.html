@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JD轮播图</title>
+</head>
+<style>
+ .box{
+    width:590px;
+    height:470px;
+    border:1px solid red;
+    position:relative;
+    /* overflow: hidden; */
+}
+.box>.ad_wrapper{
+    position:absolute;
+    width:5900px;
+    height: 470px;
+}
+.box>.ad_wrapper>li{
+    text-decoration: none;
+    float: left;
+    display: block;
+}
+.slider_indicators{
+    position:absolute;
+    width:152px;
+    height:18px;
+    background-color:green;
+    bottom: 20px;
+    left:46px;
+}
+.slider_indicators>i{
+    display:block;
+    float: left;
+    margin-right: 1px;
+    width:18px;
+    height:18px;
+    position:relative;
+}
+.slider_indicators>i::after{
+    content: "";
+    width:6px;
+    height: 6px;
+    border: 2px solid;
+    border-color: hsla(0,0%,100%,.4);
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 50%;
+}
+.slider_indicators .btn_active{
+    background-color:white;
+    border:
+}
+</style>
+<body>
+    <div class="box">
+        <div class="ad_wrapper">
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/1.jpg" alt="jdAD1">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/2.jpg" alt="jdAD2">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/3.jpg" alt="jdAD3">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/4.jpg" alt="jdAD4">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/5.jpg" alt="jdAD5">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/6.jpg" alt="jdAD6">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/7.jpg" alt="jdAD7">
+                </a>
+            </li>
+            <li>
+                <a href="JavaScript:;">
+                    <img src="../images/8.jpg" alt="jdAD8">
+                </a>
+            </li>
+        </div>
+        <div class="slider_indicators">
+            <i class="btn_active"></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+</body>
+</html>
