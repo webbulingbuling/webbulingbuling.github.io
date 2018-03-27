@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app1" class="static" v-bind:class="{ 'active': isActive, 'text-danger': hasError }">
+    </div>
+    <div id="app2" v-bind:class="classObject"></div>
+</body>
+<script>
+    var vm = new Vue({
+        el: '#app1',
+        data: {
+            isActive: true,
+            hasError: false
+        }
+    })
+    var vm1=new Vue({
+        el:'#app2',
+        data:{
+            isActive:true,
+            error:null
+        },
+        computed:{
+            classObject:function(){
+                return{
+                    active:this.isActive&&!this.error,
+                    'text-danger':this.error&&this.error.type==='fatal'
+                }
+            }
+        }
+    })
+</script>
+
+</html>
