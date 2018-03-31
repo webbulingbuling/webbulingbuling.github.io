@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>周德发的个人博客</title>
 </head>
+<link rel="stylesheet" href="./css/index.css">
 <script type="text/javascript">
   setTimeout(function() {
     var body = document.getElementsByClassName('body')[0];
@@ -14,62 +15,13 @@
     body.style.width = window.innerWidth + 'px';
   }, 20);
 </script>
-<style>
-  * {
-    padding: 0;
-    margin: 0;
-  }
-
-  .body {
-    background-color: #FFF;
-  }
-  .welcome{
-    width:200px;
-    height: 60px;
-    background-color: red;
-    position:absolute;
-    left:0;
-    top:-60px;
-  }
-  .welcome>h1{
-    line-height: 60px;
-    text-align: center;
-  }
-  .container {
-    width: 1200px;
-    height:500px;
-    background-color: #ccc;
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left: -600px;
-    margin-top: -250px
-  }
-  .container>.fl{
-      width:400px;
-      height:100%;
-      float:left;
-  }
-  .container>.left-banner{
-      background-color: green;
-  }
-  .container>.mind-banner{
-      background-color:yellow;
-  }
-  .container>.right-banner{
-      background-color: red;
-  }
-</style>
 <body class="body">
   <div class='container'>
     <div class='welcome'>
         <h1>WELCOME</h1>
     </div>
     <div class="left-banner fl">
-        <p>
-            <a href="green/drag.html">拖拽</a></br>
-            <a href="green/DragToChange.html">拖拽改变大小</a>
-        </p>
+
     </div>
     <div class='mind-banner fl'></div>
     <div class='right-banner fl'></div>
